@@ -16,7 +16,7 @@ import { constant, helper } from "@/utils";
 export const Sidebar = () => {
   const navigate = useNavigate();
   const handlerLogout = () => {
-    helper.logout(() => navigate("/"));
+    helper.logout(() => navigate("/assesment/"));
   };
   return (
     <Box
