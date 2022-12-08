@@ -8,7 +8,7 @@ import { Sports } from "@/pages/sports";
 
 export const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/assesment/",
     element: <Login />,
   },
   {
