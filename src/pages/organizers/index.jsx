@@ -1,4 +1,5 @@
 import React, { useContext, useMemo, useState } from "react";
+import { Image } from "@chakra-ui/react";
 
 import { GlobalTable, ModalForm, ModalDelete } from "@/components";
 import { useOrganizers } from "@/hooks";
@@ -36,6 +37,7 @@ export const Organizers = () => {
       {
         Header: "Image Location",
         accessor: "imageLocation",
+        Cell: ({ value }) => <Image src={value} alt={value} />,
       },
     ],
     []
