@@ -101,20 +101,18 @@ export const ModalForm = ({
                     perPage: 10,
                   }}
                   useBasicStyles
+                  selectedOptionColor="gray"
                   value={value}
                   size="lg"
-                  selectedOptionColor="base.secondary"
                   placeholder={placeholder}
                   closeMenuOnSelect={true}
                   chakraStyles={{
                     container: (styles) => ({
                       ...styles,
-                      textColor: "base.secondary.500",
                     }),
 
                     control: (styles) => ({
                       ...styles,
-                      textColor: "base.secondary.500",
                       borderColor: !value ? "neutral.10" : "base.secondary.500",
                       rounded: "10px",
                     }),
@@ -139,7 +137,6 @@ export const ModalForm = ({
                       },
                     }),
                   }}
-                  selectedOptionStyle="color"
                   components={components}
                   onChange={onChange}
                   getOptionLabel={(option) => option.label}
