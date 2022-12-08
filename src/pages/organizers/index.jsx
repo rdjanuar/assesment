@@ -37,7 +37,7 @@ export const Organizers = () => {
       {
         Header: "Image Location",
         accessor: "imageLocation",
-        Cell: ({ value }) => <Image src={value} alt={value} />,
+        Cell: ({ value }) => <Image src={value} alt={value} w={54} h={54} />,
       },
     ],
     []

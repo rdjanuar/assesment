@@ -119,7 +119,7 @@ export const GlobalTable = ({
 
   return (
     <>
-      <TableContainer my={5} maxWidth="100%" display="block">
+      <TableContainer my={5} display="block">
         <Flex justify="space-between" align="center" py={4}>
           <Select
             value={pageSize}
@@ -171,7 +171,7 @@ export const GlobalTable = ({
               </Tr>
             ))}
           </Thead>
-          <Tbody {...getTableBodyProps()}>
+          <Tbody {...getTableBodyProps()} w="auto">
             {isError ? (
               <div>Data Not Found</div>
             ) : (
